@@ -45,6 +45,8 @@ public class StepDefFK {
 //		System.setProperty("webdriver.chrome.driver", "C://Apps//Tools//chromedriver.exe");
 		// driver=new RemoteWebDriver(dr);
 //		driver = new ChromeDriver();
+//			driver = new ChromeDriver();
+
 		driver.get("https://www.flipkart.com/");
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
