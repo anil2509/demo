@@ -49,35 +49,35 @@ formatter.match({
   "location": "StepDefFK.user_goes_to_flipkart_site()"
 });
 formatter.result({
-  "duration": 28003724190,
+  "duration": 36778435006,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefFK.searches_for_a_product()"
 });
 formatter.result({
-  "duration": 1642844534,
+  "duration": 1653446466,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefFK.checks_that_the_product_is_in_stock()"
 });
 formatter.result({
-  "duration": 79059296242,
+  "duration": 60187824233,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefFK.adds_the_product_to_his_cart()"
 });
 formatter.result({
-  "duration": 623360104,
+  "duration": 169001,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefFK.the_product_is_added_to_cart()"
 });
 formatter.result({
-  "duration": 8272503534,
+  "duration": 4230166279,
   "status": "passed"
 });
 });
