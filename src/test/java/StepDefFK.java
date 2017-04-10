@@ -40,11 +40,11 @@ public class StepDefFK {
 
 	@Given("^user goes to flipkart site$")
 	public void user_goes_to_flipkart_site() {
-		// driver = new FirefoxDriver();
+		 driver = new FirefoxDriver();
 		// System.setProperty("webdriver.chrome.driver", "seleni");
-		System.setProperty("webdriver.chrome.driver", "C://Apps//Tools//chromedriver.exe");
+//		System.setProperty("webdriver.chrome.driver", "C://Apps//Tools//chromedriver.exe");
 		// driver=new RemoteWebDriver(dr);
-		driver = new ChromeDriver();
+//		driver = new ChromeDriver();
 		driver.get("https://www.flipkart.com/");
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
