@@ -1,3 +1,5 @@
+package com.flipkart.tests;
+
 import org.junit.runner.RunWith;
 //import cucumber.junit.Cucumber;
 
@@ -8,7 +10,8 @@ import cucumber.api.junit.Cucumber;
 
 @CucumberOptions(
 		format = { "pretty", "html:cucumber-test-report" }, 
-//		features = "sample.feature",
+		features = "classpath:",
+		glue = "classpath:",
 		tags = {"@flipkartPositiveTest"})
 //tags = {"@fetchTable"})
 
