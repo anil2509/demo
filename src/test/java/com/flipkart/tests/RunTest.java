@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 
 @CucumberOptions(
-		format = { "pretty", "json:cucumber-test-report" }, 
+		plugin = { "json:cucumber-test-report/cuc.json" }, 
 		features = "classpath:",
 		glue = "classpath:",
 		tags = {"@flipkartPositiveTest"})
