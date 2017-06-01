@@ -7,7 +7,7 @@ public class FKViewCartPage {
 	
 	WebDriver driver;
 	
-	By productNameInCartField = By.cssSelector("._325-jiLTLNhHFYhvZUSOae._3ROAwxXGdORI5DJJGv150i");
+	By productNameInCartField = By.cssSelector("._325-ji._3ROAwx");
 
 	public FKViewCartPage(WebDriver driver){
 		this.driver = driver;

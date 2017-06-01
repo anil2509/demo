@@ -13,4 +13,4 @@ Then the product is added to cart
 
 Examples:
 |Search Item|
-|nokia mobiles|
+|nike deo|

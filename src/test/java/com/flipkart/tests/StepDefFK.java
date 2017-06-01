@@ -1,7 +1,9 @@
 package com.flipkart.tests;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.Collection;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -27,16 +29,21 @@ import com.flipkart.pages.FKViewCartPage;
 import com.flipkart.pages.FKViewPhonePage;
 import com.thoughtworks.selenium.webdriven.commands.GetText;
 
+import bsh.This;
+import cucumber.api.Scenario;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 
 public class StepDefFK {
-
+	
 	WebDriver driver = new FirefoxDriver();
 	// RemoteWebDriver driver;
 	Boolean isProductInStock;
 	String productName;
 	String productNameCart;
+	Scenario scenario;
+	byte[] screenshot;
 	
 	FKHomePage inFKHomePage = new FKHomePage(driver);
 	FKSearchResultsPage inFKSearchResultsPage = new FKSearchResultsPage(driver);
@@ -49,6 +56,11 @@ public class StepDefFK {
 	// dr.setPlatform(Platform.WINDOWS);
 	// }
 
+	@Before
+	public void before(Scenario scenario) {
+	    this.scenario = scenario;
+	}
+	
 	@Given("^user goes to flipkart site$")
 	public void user_goes_to_flipkart_site() {
 
@@ -60,7 +72,7 @@ public class StepDefFK {
 		// driver = new ChromeDriver();
 
 		driver.get("https://www.flipkart.com/");
-		driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 
 	}
@@ -74,7 +86,7 @@ public class StepDefFK {
 	@Given("^checks that the product is in stock$")
 	public void checks_that_the_product_is_in_stock() throws IOException, InterruptedException {
 
-		// list fetches all Search result WEs present on Search page
+		// Fetches all Search result WEs present on Search page into a list
 		List<WebElement> listOfSearchResults = inFKSearchResultsPage.getListOfSearchResults();
 		System.out.println("WL Size : " + listOfSearchResults.size());
 
@@ -92,8 +104,12 @@ public class StepDefFK {
 			}
 
 			// Take Snap
-			File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-			FileUtils.copyFile(scrFile, new File("cucumber-test-report\\snap.png"));
+//			File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+//			FileUtils.copyFile(scrFile, new File("cucumber-test-report\\snap.png"));
+
+			screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+//			System.out.println("Bytes in snap" + screenshot + scenario.getName());
+			scenario.embed(screenshot, "image/png");
 
 			isProductInStock = inFKViewPhonePage.isGotoCartButtonEnabled();
 

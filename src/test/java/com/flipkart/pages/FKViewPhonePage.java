@@ -8,8 +8,8 @@ public class FKViewPhonePage {
 
 	WebDriver driver;
 
-	By gotoCartButton = By.cssSelector("._2AkmmACqEoGpO0Lb0CP5qw._3Plo8Q-aRTjrAIDCXG3vYl._19RW-rzkCL0Td3RFU_ZnE9");
-	By productNameField = By.cssSelector("._3eAQiDZVhw_jnZcZCyr4gi");
+	By gotoCartButton = By.cssSelector("._2AkmmA._3Plo8Q._19RW-r");
+	By productNameField = By.cssSelector("._3eAQiD");
 
 	public FKViewPhonePage(WebDriver driver) {
 		this.driver = driver;

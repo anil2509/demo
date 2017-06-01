@@ -14,15 +14,14 @@ public class FKSearchResultsPage {
 	WebDriver driver;
 	List<WebElement> listOfSearchResults;
 
-	By searchResults = By.cssSelector("._1Nyybr5YprgvR8x-f69kGt._30XEf0wlGIqtCzJGfIHqbh");
+	By searchResults = By.cssSelector("._1Nyybr._30XEf0");
 
 	public FKSearchResultsPage(WebDriver driver) {
 		this.driver = driver;
 	}
 
 	public List<WebElement> getListOfSearchResults() {
-		// Use JS executor to scroll down and back up the page so all Search
-		// Elements are fetched
+		// Use JS executor to scroll down and back up the page so all Search Elements are fetched
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
 		js.executeScript("window.scrollTo(0, 0)");

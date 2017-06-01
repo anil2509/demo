@@ -1,0 +1,7 @@
+com\flipkart\tests\StepDefFK.class
+com\flipkart\pages\FKViewCartPage.class
+com\flipkart\tests\StepDef.class
+com\flipkart\pages\FKViewPhonePage.class
+com\flipkart\pages\FKHomePage.class
+com\flipkart\tests\RunTest.class
+com\flipkart\pages\FKSearchResultsPage.class

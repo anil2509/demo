@@ -8,7 +8,7 @@ public class FKHomePage {
 	WebDriver driver;
 	
 	By username_field = By.name("q");
-	By searchbutton = By.cssSelector(".vh79eNYfDXPHG5mI79OWE");
+	By searchbutton = By.cssSelector(".vh79eN");
 	
 	public FKHomePage(WebDriver driver) {
 		this.driver = driver;
