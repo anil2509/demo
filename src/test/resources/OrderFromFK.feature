@@ -14,3 +14,4 @@ Then the product is added to cart
 Examples:
 |Search Item|
 |nike deo|
+|ps4|
