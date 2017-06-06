@@ -27,9 +27,7 @@ import com.flipkart.pages.FKHomePage;
 import com.flipkart.pages.FKSearchResultsPage;
 import com.flipkart.pages.FKViewCartPage;
 import com.flipkart.pages.FKViewPhonePage;
-import com.thoughtworks.selenium.webdriven.commands.GetText;
 
-//import bsh.This;
 import cucumber.api.Scenario;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;

@@ -13,7 +13,7 @@ import cucumber.api.junit.Cucumber;
 //		plugin = { "pretty","html:cucumber-test-report" },
 		features = "classpath:",
 		glue = "classpath:",
-		tags = {"@flipkartPositiveTest"})
+		tags = {"~@Scenario_1","~@fetchTable"})
 //tags = {"@fetchTable"})
 
 public class RunTest {

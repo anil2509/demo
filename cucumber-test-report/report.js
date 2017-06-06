@@ -13,147 +13,117 @@ formatter.feature({
   ]
 });
 formatter.scenarioOutline({
-  "line": 6,
-  "name": "Add product to cart on FK",
+  "line": 20,
+  "name": "Add product to cart on FK and search for ps4",
   "description": "",
-  "id": "to-check-that-product-can-be-added-to-cart-on-fk;add-product-to-cart-on-fk",
+  "id": "to-check-that-product-can-be-added-to-cart-on-fk;add-product-to-cart-on-fk-and-search-for-ps4",
   "type": "scenario_outline",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 19,
+      "name": "@Scenario_2"
+    }
+  ]
 });
 formatter.step({
-  "line": 8,
+  "line": 22,
   "name": "user goes to flipkart site",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 9,
+  "line": 23,
   "name": "searches for item \u003cSearch Item\u003e",
   "keyword": "And "
 });
 formatter.step({
-  "line": 10,
+  "line": 24,
   "name": "checks that the product is in stock",
   "keyword": "And "
 });
 formatter.step({
-  "line": 11,
+  "line": 25,
   "name": "adds the product to his cart",
   "keyword": "And "
 });
 formatter.step({
-  "line": 12,
+  "line": 26,
   "name": "the product is added to cart",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 14,
+  "line": 28,
   "name": "",
   "description": "",
-  "id": "to-check-that-product-can-be-added-to-cart-on-fk;add-product-to-cart-on-fk;",
+  "id": "to-check-that-product-can-be-added-to-cart-on-fk;add-product-to-cart-on-fk-and-search-for-ps4;",
   "rows": [
     {
       "cells": [
         "Search Item"
       ],
-      "line": 15,
-      "id": "to-check-that-product-can-be-added-to-cart-on-fk;add-product-to-cart-on-fk;;1"
+      "line": 29,
+      "id": "to-check-that-product-can-be-added-to-cart-on-fk;add-product-to-cart-on-fk-and-search-for-ps4;;1"
     },
     {
       "cells": [
-        "nike deo"
+        "ps4"
       ],
-      "line": 16,
-      "id": "to-check-that-product-can-be-added-to-cart-on-fk;add-product-to-cart-on-fk;;2"
+      "line": 30,
+      "id": "to-check-that-product-can-be-added-to-cart-on-fk;add-product-to-cart-on-fk-and-search-for-ps4;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 10848596293,
+  "duration": 11481583937,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 16,
-  "name": "Add product to cart on FK",
+  "line": 30,
+  "name": "Add product to cart on FK and search for ps4",
   "description": "",
-  "id": "to-check-that-product-can-be-added-to-cart-on-fk;add-product-to-cart-on-fk;;2",
+  "id": "to-check-that-product-can-be-added-to-cart-on-fk;add-product-to-cart-on-fk-and-search-for-ps4;;2",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
     {
       "line": 1,
       "name": "@flipkartPositiveTest"
+    },
+    {
+      "line": 19,
+      "name": "@Scenario_2"
     }
   ]
 });
 formatter.step({
-  "line": 8,
+  "line": 22,
   "name": "user goes to flipkart site",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 9,
-  "name": "searches for item nike deo",
+  "line": 23,
+  "name": "searches for item ps4",
   "matchedColumns": [
     0
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 10,
+  "line": 24,
   "name": "checks that the product is in stock",
   "keyword": "And "
 });
 formatter.step({
-  "line": 11,
+  "line": 25,
   "name": "adds the product to his cart",
   "keyword": "And "
 });
 formatter.step({
-  "line": 12,
+  "line": 26,
   "name": "the product is added to cart",
   "keyword": "Then "
 });
 formatter.match({
   "location": "StepDefFK.user_goes_to_flipkart_site()"
-});
-formatter.result({
-  "duration": 7744313295,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "nike deo",
-      "offset": 18
-    }
-  ],
-  "location": "StepDefFK.searches_for_item(String)"
-});
-formatter.result({
-  "duration": 1602607007,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefFK.checks_that_the_product_is_in_stock()"
-});
-formatter.embedding("image/png", "embedded0.png");
-formatter.result({
-  "duration": 12417225729,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefFK.adds_the_product_to_his_cart()"
-});
-formatter.result({
-  "duration": 404573859,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefFK.the_product_is_added_to_cart()"
-});
-formatter.result({
-  "duration": 3483322534,
-  "status": "passed"
-});
 });
